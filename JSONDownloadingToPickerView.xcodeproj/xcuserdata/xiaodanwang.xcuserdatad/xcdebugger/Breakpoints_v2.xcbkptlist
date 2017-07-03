@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JSONDownloadingToPickerView/ViewController.swift"
+            timestampString = "520806130.538727"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "ShowDOW(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JSONDownloadingToPickerView.ViewController.ShowDOW (Any) -&gt; ()"
+                  moduleName = "JSONDownloadingToPickerView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xiaodanwang/Desktop/JSONDownloadingToPickerView/JSONDownloadingToPickerView/ViewController.swift"
+                  timestampString = "520805435.36518"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "146">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JSONDownloadingToPickerView.ViewController.(ShowDOW (Any) -&gt; ()).(closure #1)"
+                  moduleName = "JSONDownloadingToPickerView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xiaodanwang/Desktop/JSONDownloadingToPickerView/JSONDownloadingToPickerView/ViewController.swift"
+                  timestampString = "520805435.368089"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

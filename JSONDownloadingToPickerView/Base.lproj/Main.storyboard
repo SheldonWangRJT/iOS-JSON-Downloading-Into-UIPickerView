@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JSONDownloadingToPickerView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fMJ-SC-1o7">
+                                <rect key="frame" x="0.0" y="469" width="375" height="198"/>
+                                <subviews>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rdv-jE-Ygt">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="zFE-2R-UJh"/>
+                                        </constraints>
+                                        <items>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="Yuc-GY-N2A"/>
+                                            <barButtonItem title="Select" id="pai-FL-oAa">
+                                                <connections>
+                                                    <action selector="selet:" destination="BYZ-38-t0r" id="ebi-ju-tIL"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </items>
+                                    </toolbar>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NZD-g4-q21">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="154"/>
+                                    </pickerView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="NZD-g4-q21" firstAttribute="leading" secondItem="fMJ-SC-1o7" secondAttribute="leading" id="3hf-Jn-AIR"/>
+                                    <constraint firstAttribute="height" constant="198" id="4EG-1H-UD1"/>
+                                    <constraint firstItem="NZD-g4-q21" firstAttribute="top" secondItem="Rdv-jE-Ygt" secondAttribute="bottom" id="54K-Zr-byj"/>
+                                    <constraint firstAttribute="trailing" secondItem="NZD-g4-q21" secondAttribute="trailing" id="gfx-2m-fCi"/>
+                                    <constraint firstAttribute="bottom" secondItem="NZD-g4-q21" secondAttribute="bottom" id="jsw-br-1BH"/>
+                                    <constraint firstItem="Rdv-jE-Ygt" firstAttribute="top" secondItem="fMJ-SC-1o7" secondAttribute="top" id="v3I-YI-lMl"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rdv-jE-Ygt" secondAttribute="trailing" id="zov-vJ-Zf4"/>
+                                    <constraint firstItem="Rdv-jE-Ygt" firstAttribute="leading" secondItem="fMJ-SC-1o7" secondAttribute="leading" id="zsE-bg-rHZ"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Zx-lz-yYP">
+                                <rect key="frame" x="85" y="194" width="143" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Choose Day of Week"/>
+                                <connections>
+                                    <action selector="ShowDOW:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bur-a2-3Cg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JuM-2L-5qS">
+                                <rect key="frame" x="85" y="253" width="115" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Choose Location"/>
+                                <connections>
+                                    <action selector="showLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5j3-ku-IME"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="pvq-FG-fbA">
+                                <rect key="frame" x="240" y="191" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="LZR-0E-l8X">
+                                <rect key="frame" x="240" y="250" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqc-Fc-1TS">
+                                <rect key="frame" x="117" y="310" width="140" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fMJ-SC-1o7" secondAttribute="trailing" id="BQB-TB-b8U"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fMJ-SC-1o7" secondAttribute="bottom" id="H7Y-3K-pmH"/>
+                            <constraint firstItem="fMJ-SC-1o7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="imF-LW-86g"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activity1" destination="pvq-FG-fbA" id="L9c-cQ-AFb"/>
+                        <outlet property="activity2" destination="LZR-0E-l8X" id="uc4-WZ-NlI"/>
+                        <outlet property="containerView" destination="fMJ-SC-1o7" id="bGY-2E-Qpz"/>
+                        <outlet property="pickerView" destination="NZD-g4-q21" id="qpW-AJ-45b"/>
+                        <outlet property="resLabel" destination="aqc-Fc-1TS" id="Dhm-sM-OGa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
